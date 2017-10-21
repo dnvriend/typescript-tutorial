@@ -1,0 +1,23 @@
+{
+  "name": "01-setting-up-a-project",
+  "version": "1.0.0",
+  "description": "We will look at setting up a project. We need `npm`, the [node package manager](https://en.wikipedia.org/wiki/Npm_(software)), and can be installed with `brew install npm`. After we have installed npm, create a directory and then:",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^8.0.46",
+    "nodemon": "^1.12.1",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.3"
+  },
+  "dependencies": {
+    "request": "^2.83.0",
+    "space-lift": "^0.6.0"
+  }
+}
