@@ -1,8 +1,8 @@
 {
-  "name": "01-setting-up-a-project",
+  "name": "04-exploring-nodejs-library",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/main.ts",
   "scripts": {
     "start": "npm run build:live",
     "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/main.ts"

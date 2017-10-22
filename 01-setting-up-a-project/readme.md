@@ -44,8 +44,8 @@ The package [node-ts](https://www.npmjs.com/package/ts-node) is a TypeScript exe
 
 Lets install them:
 
-- `npm install ts-node --save-dev`: 
-- `npm install nodemon --save-dev`: 
+- `npm install ts-node --global`: 
+- `npm install nodemon --global`: 
 
 ## Adding a scripts configuration
 We must now replace the `scripts` property in `package.json` like this one:
@@ -76,6 +76,11 @@ We must now replace the `scripts` property in `package.json` like this one:
 ```
 
 ## Creating the main.ts
+Use your favorite editor and type:
+
+```
+console.log("Hello World");
+```
 
 ## Launch the application
 You can launch the project with the command `npm start` that will monitor changes to the directory and recompile/restart the application.

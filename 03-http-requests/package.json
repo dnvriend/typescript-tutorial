@@ -1,8 +1,8 @@
 {
-  "name": "01-setting-up-a-project",
+  "name": "03-http-requests",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/main.ts",
   "scripts": {
     "start": "npm run build:live",
     "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/main.ts"
@@ -17,6 +17,7 @@
     "typescript": "^2.5.3"
   },
   "dependencies": {
+    "request": "^2.83.0",
     "space-lift": "^0.6.0"
   }
 }
