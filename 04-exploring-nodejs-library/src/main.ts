@@ -112,6 +112,12 @@ const file = '/tmp/test.txt'
 const result = writeFile(file)
 console.log("result: ", readFile(file))
 
+// snappy codec
+import snappy = require("snappy")
+const compressedSnappy = snappy.compressSync(helloBytes)
+const decompressedSnappy = snappy.uncompressSync(compressedSnappy)
+console.log("snappy decompressed: ", decompressedSnappy.toString('utf-8'))
+
 // conclusion: Typescript and node seems quite capable :)
 
 
