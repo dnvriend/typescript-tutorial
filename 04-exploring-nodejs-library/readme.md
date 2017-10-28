@@ -5,3 +5,4 @@ This time we'll look at the [nodejs library](https://nodejs.org/dist/latest-v8.x
 - uuid: https://www.npmjs.com/package/uuid
 - Space-lift: https://www.npmjs.com/package/space-lift
 - Google Snappy: https://www.npmjs.com/package/snappy
+- avro-js: https://www.npmjs.com/package/avro-js

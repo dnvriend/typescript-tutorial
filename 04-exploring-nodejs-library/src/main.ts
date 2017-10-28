@@ -118,6 +118,25 @@ const compressedSnappy = snappy.compressSync(helloBytes)
 const decompressedSnappy = snappy.uncompressSync(compressedSnappy)
 console.log("snappy decompressed: ", decompressedSnappy.toString('utf-8'))
 
+// avro codec
+import avro = require("avro-js")
+const v1Schema = avro.parse({
+    "type" : "record",
+    "name" : "Person",
+    "namespace" : "com.github.dnvriend",
+    "fields" : [ {
+      "name" : "name",
+      "type" : "string",
+      "default" : ""
+    } ]
+  });
+
+const v1Hex: string = "0C44656E6E6973"
+const v1Bytes: Buffer = Buffer.from(v1Hex, 'hex')
+const obj = v1Schema.fromBuffer(v1Bytes);
+console.log("fingerprint: ", v1Schema.getFingerprint('sha256').toString('hex'))
+console.log(obj)
+
 // conclusion: Typescript and node seems quite capable :)
 
 
