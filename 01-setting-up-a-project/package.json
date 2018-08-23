@@ -14,7 +14,7 @@
     "@types/node": "^8.0.46",
     "nodemon": "^1.12.1",
     "ts-node": "^3.3.0",
-    "typescript": "^2.5.3"
+    "typescript": "^2.9.2"
   },
   "dependencies": {
     "space-lift": "^0.6.0"

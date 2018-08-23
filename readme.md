@@ -13,8 +13,12 @@ Because your code will be run by node, you have the following [global objects](h
 - [require](https://nodejs.org/dist/latest-v8.x/docs/api/modules.html): Loads a node module. In node, each file is treated as a separate module. So `let http = require('http')` loads a module, which resolves to a file, using a strategy that is described [here](https://nodejs.org/dist/latest-v8.x/docs/api/modules.html#modules_all_together). The TD;DR is that `require(<module_name>)` looks in several places on your system to resolve a file and its dependencies. When successful, you get a reference to the module and can start coding.
 
 ## Resources
-- Typescript: https://www.typescriptlang.org/
-- NodeJs: https://nodejs.org/en/
-- Npm: https://www.npmjs.com/
-- https://basarat.gitbooks.io/typescript/docs/quick/nodejs.html
-- https://www.twilio.com/blog/2017/08/http-requests-in-node-js.html
+- [AWS Lambda NodeJS Handler](https://docs.aws.amazon.com/lambda/latest/dg/nodejs-prog-model-handler.html)
+- [Serverless Best Practices](https://medium.com/@PaulDJohnston/serverless-best-practices-b3c97d551535)
+- [Channel9 - What is new in TypeScript 3.0](https://channel9.msdn.com/Events/Build/2017/B8088/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [NodeJs](https://nodejs.org/en/)
+- [Npm](https://www.npmjs.com/)
+- [Npx - Execute npm package binaries](https://www.npmjs.com/package/npx)
+- [NodeJS Gitbook](https://basarat.gitbooks.io/typescript/docs/quick/nodejs.html)
+- [HTTP Requests in NodeJS](https://www.twilio.com/blog/2017/08/http-requests-in-node-js.html)
